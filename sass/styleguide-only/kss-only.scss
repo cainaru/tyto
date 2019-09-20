@@ -1,0 +1,18 @@
+// This file is used to add styles to the style guide and is not included in
+// the Drupal site. It gets included by the style guide by adding it to the
+// options.styleGuide.css object in gulpfile.js.
+
+@import 'init';
+
+#kss-node {
+  .kss-description pre {
+    background: $gray-100;
+  }
+
+  .font-sans-serif {
+    font-family: $sans-serif;
+  }
+  .font-monospace {
+    font-family: $monospace;
+  }
+}

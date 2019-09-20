@@ -1,0 +1,26 @@
+@import "init";
+
+// Navbar
+//
+// This is the styling for main navigation.
+//
+// Styleguide Components.navbar
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+@mixin nav-item {
+  display: block;
+  padding: 0.75rem $font-size-base;
+}
+
+.main-menu__item {
+  @include nav-item;
+}
+
+.main-menu__link {
+  padding-bottom: 0.25rem;
+}

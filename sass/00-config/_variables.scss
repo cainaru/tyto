@@ -1,0 +1,202 @@
+// Variables
+
+// Set the directory for the theme root used to locate images, fonts etc.
+$theme-root: '..';
+
+// Set other directories relative to theme root.
+$image-path: '#{$theme-root}/images';
+
+// Colors
+
+$white: #ffffff;
+$gray-100: #f8f8f8;
+$gray-200: #dcdcdc;
+$gray-300: #c0c0c0;
+$gray-400: #a4a4a4;
+$gray-500: #888888;
+$gray-600: #6c6c6c;
+$gray-700: #505050;
+$gray-800: #343434;
+$gray-900: #181818;
+$black: #000000;
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:                                true;
+$enable-rounded:                              true;
+$enable-shadows:                              false;
+$enable-gradients:                            false;
+$enable-transitions:                          true;
+$enable-prefers-reduced-motion-media-query:   true;
+$enable-grid-classes:                         true;
+$enable-pointer-cursor-for-buttons:           true;
+$enable-validation-icons:                     true;
+$enable-deprecation-messages:                 true;
+
+//** Background color for `<body>`.
+$body-bg:                     $white;
+//** Global text color on `<body>`.
+$body-color:                  $gray-900;
+
+$border-width:                1px;
+$border-color:                $gray-200;
+
+$border-radius:               .25rem;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+// Fonts
+//
+// There are two variables for fonts, `$sans-serif` and `$monospace`. The fonts
+// used for each of those variables use the "native font stack" adopted by
+// Bootstrap v4. Read more about <a
+// href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">native
+// font stacks in this <em>Smashing Magazine</em> article</a>.
+//
+// To change the font families, replace the values of the variables.
+//
+// <div>
+//  <h3>Sans-serif</h3>
+//  <div class="font-sans-serif">
+//    <p>The quick brown fox jumps over the lazy dog.</p>
+//  </div>
+// </div>
+// <div>
+//  <h3>Monospace</h3>
+//  <div class="font-monospace">
+//    <p>The quick brown fox jumps over the lazy dog.</p>
+//  </div>
+// </div>
+//
+// Weight: 2
+//
+// Styleguide Base.fonts
+
+// Define the font families you are going to use as variables.
+$sans-serif:                       -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$monospace:                        SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font-family-base:                 $sans-serif;
+
+$font-size-base:                   1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                     $font-size-base * 1.25;
+$font-size-sm:                     $font-size-base * .875;
+$font-size-xs:                     $font-size-base * .75;
+
+$font-weight-100:                  100;
+$font-weight-200:                  200;
+$font-weight-300:                  300;
+$font-weight-normal:               400;
+$font-weight-500:                  500;
+$font-weight-600:                  600;
+$font-weight-700:                  700;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $font-size-base;
+$headings-font-family:        null;
+$headings-font-style:         null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              null;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            $font-weight-300;
+
+$small-font-size:                   80%;
+
+$text-muted:                        $gray-700;
+
+$legend-font-size:                  1.5rem;
+
+$code-font-size:                    87.5%;
+$code-color:                        $pink;
+
+$kbd-font-size:                     $code-font-size;
+$kbd-color:                         $white;
+$kbd-bg:                            $gray-900;
+
+$mark-bg:                           #fcf8e3;
+$mark-padding:                      .2em;
+
+$pre-color:                         null;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:                .5rem;
+$table-cell-padding-sm:             .25rem;
+
+$table-cell-vertical-align:         top;
+
+$table-color:                       $body-color;
+$table-bg:                          null;
+$table-accent-bg:                   rgba($black, .05);
+$table-hover-color:                 $table-color;
+$table-hover-bg:                    rgba($black, .075);
+$table-active-bg:                   $table-hover-bg;
+
+$table-border-width:                $border-width;
+$table-border-color:                $border-color;
+
+$table-head-bg:                     $gray-200;
+$table-head-color:                  $gray-700;
+$table-head-border-color:           $gray-700;
+
+$table-dark-color:                  $white;
+$table-dark-bg:                     $gray-800;
+$table-dark-accent-bg:              rgba($white, .05);
+$table-dark-hover-color:            $table-dark-color;
+$table-dark-hover-bg:               rgba($white, .075);
+$table-dark-border-color:           lighten($table-dark-bg, 7.5%);
+
+$table-striped-order:               odd;
+
+$table-caption-color:               $text-muted;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         .5rem;
+$input-btn-font-family:       null;
+$input-btn-font-size:         1rem;
+$input-btn-line-height:       1.5;
+
+$input-btn-focus-width:       .2rem;
+$input-btn-focus-color:       null;
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$input-btn-padding-y-sm:      .5rem;
+$input-btn-padding-x-sm:      .5rem;
+$input-btn-font-size-sm:      0.875rem;
+$input-btn-line-height-sm:    1.5;
+
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      .5rem;
+$input-btn-font-size-lg:      1.25rem;
+$input-btn-line-height-lg:    1.5;
+
+$input-btn-border-width:      $border-width;

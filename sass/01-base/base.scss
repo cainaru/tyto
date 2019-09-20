@@ -1,0 +1,14 @@
+// sass-lint:disable no-duplicate-properties, no-vendor-prefixes
+
+@import 'init';
+@import 'reboot';
+
+// Base
+//
+// This section defines base styles applied to HTML elements as well as styles
+// applied to visual elements.
+//
+// Styleguide Base
+
+@import 'typography/typography';
+@import 'forms/forms';

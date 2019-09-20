@@ -1,0 +1,52 @@
+// stylelint-disable selector-no-qualifying-type
+
+// Forms
+//
+// Weight: 5
+//
+// Styleguide Base.forms
+
+// Text input
+//
+// Markup: forms-text-input.twig
+//
+// Weight: 1
+//
+// Styleguide Base.forms.text-input
+
+//
+// Textual form controls
+//
+
+.form-control {
+  display: block;
+  width: 100%;
+}
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+
+.form-group {
+  margin-bottom: $font-size-base;
+}
+
+.form-item .description {
+  color: $text-muted;
+}
+
+// Required indicator
+
+.form-required::after {
+  content: '';
+  vertical-align: super;
+  display: inline-block;
+  background-image: url('#{$image-path}/required.svg');
+  background-repeat: no-repeat;
+  background-size: .4375rem .4375rem;
+  width: .4375rem;
+  height: .4375rem;
+  margin: 0 0.3em;
+}
+
